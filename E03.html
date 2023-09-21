@@ -9,9 +9,24 @@
     */
 
     //ENTRADA
-
+    const horario = prompt(`Em que horario se estuda?("M" Para Matutino, "I" Para Integral e "N" Para Noturno)`).toUpperCase();
 
     //PROCESSAMENTO
+    if (horario === "M") {
+        alert(`Estuda das 08:00 até 12:00.`);
+    }
+
+    else if (horario === "I") {
+        alert(`Estuda das 08:00 até 17:00.`);
+    }
+
+    else if (horario === "N") {
+        alert(`Estuda das 19:00 até 22:00.`);
+    }
+
+    else {
+        alert(`??????`);
+    }
 
 
     //SAÍDA

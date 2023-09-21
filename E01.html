@@ -8,10 +8,23 @@
     */
 
     //ENTRADA
-
+    const nota = Number(prompt(`Qual sua primeira nota?`).replace("," , ".").trim());
+    const nota2 = Number(prompt(`Qual sua segunda nota?`).replace("," , ".").trim());
 
     //PROCESSAMENTO
+    let total = (nota + nota2) / 2
 
+    if (total >= 6) {
+        alert(`Possui chances de ser aprovado!`);
+    }
+
+    else if (total < 6) {
+        alert(`Está reprovado!`);
+    }
+
+    else {
+        alert(`Valor Invalido!!!!!!`);
+    }
 
     //SAÍDA
 

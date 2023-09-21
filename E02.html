@@ -10,10 +10,27 @@
     */
 
     //ENTRADA
-
+    const horas = Number(prompt(`Quantas Horas você andou com a bicicleta??`).trim()); 
 
     //PROCESSAMENTO
+    if (horas <= 1 && horas > 0) {
+        let total = (horas * 9.90)
+        alert(`Você andou por ${horas} horas, e custou R$${total.toFixed(2).replace("." , ",")}.`);
+    }
 
+    else if (horas <= 3 && horas > 1) {
+        let total = (horas * 8.90)
+        alert(`Você andou por ${horas} horas, e custou R$${total.toFixed(2).replace("." , ",")}.`);
+    }
+
+    else if (horas > 3) {
+        let total = (horas * 6.90)
+        alert(`Você andou por ${horas} horas, e custou R$${total.toFixed(2).replace("." , ",")}.`);
+    }
+
+    else {
+        alert(`??????????`);
+    }
 
     //SAÍDA
 

@@ -10,12 +10,25 @@
     */
 
     //ENTRADA
-
+    let custo = Number(prompt(`Quanto será cobrado para realizar o transporte?`));
+    const peso = Number(prompt(`Qual o peso da carga que será transportada?`));
 
     //PROCESSAMENTO
+    let custoAdicional = peso - 40
+
+    if (custoAdicional === 0) {
+        alert(`O custo total vai ser de R$${custo} e o custo por tonelada vai ser R$${(custo / peso).toFixed(2).replace("." , ",")}`);
+    }
+
+    else {
+        alert(`O custo total vai ser R$${(custo + custo * (custoAdicional / 100)).toFixed(2).replace("." , ",")} e o custo por tonelada vai ser R$${((custo * (custoAdicional / 100)) / peso).toFixed(2).replace("." , ",")}`);
+    }
+
+    /* Perdão Professor, me embolei todo :D */
 
 
     //SAÍDA
+
 
 
     /*
